@@ -3,6 +3,13 @@ using namespace std;
 
 void sort(int arr[],int size){
 
+    for (int i = 0;i < size-1;i++) {
+        for (int j = 0;j < size - i - 1;j++) {
+            if (arr[j + 1] < arr[j]) {
+                swap(arr[j + 1], arr[j]);
+            }
+        }
+    }
 
 }
 
@@ -12,6 +19,7 @@ int main()
     int size = sizeof(arr) / sizeof(arr[0]);
     sort(arr,size);
 
+    for (int i = 0;i < size;i++) cout << arr[i] << " ";
     return 0;
 }
 
