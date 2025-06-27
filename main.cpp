@@ -1,6 +1,13 @@
 #include <iostream>
 using namespace std;
+
+
 //sortdev·ÖÖ§×¢ÊÍ
+void sortdev(int a, int b) {
+    return a > b;
+}
+
+
 void sort(int arr[],int size){
 
     for (int i = 0;i < size-1;i++) {
